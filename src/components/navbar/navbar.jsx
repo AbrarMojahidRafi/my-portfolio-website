@@ -1,6 +1,14 @@
 import React from 'react'
 
 const navbar = () => {
+
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about-section');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <nav className="bg-white border-gray-200 dark:bg-gray-900 py-5">
@@ -28,7 +36,20 @@ const navbar = () => {
                 href="#" 
                 className="block py-2 px-3 text-white relative group md:p-0 dark:text-white"
               >
-                Home
+                <b>HOME</b> 
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#about-section"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToAbout();
+                }}
+                className="block py-2 px-3 text-gray-900 relative group md:p-0 dark:text-white"
+              >
+                <b>ABOUT</b>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
@@ -37,7 +58,7 @@ const navbar = () => {
                 href="#" 
                 className="block py-2 px-3 text-gray-900 relative group md:p-0 dark:text-white"
               >
-                About
+                <b>WORKS</b>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
@@ -46,7 +67,7 @@ const navbar = () => {
                 href="#" 
                 className="block py-2 px-3 text-gray-900 relative group md:p-0 dark:text-white"
               >
-                Projects
+                <b>PRICING</b>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
@@ -55,16 +76,7 @@ const navbar = () => {
                 href="#" 
                 className="block py-2 px-3 text-gray-900 relative group md:p-0 dark:text-white"
               >
-                Pricing
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#" 
-                className="block py-2 px-3 text-gray-900 relative group md:p-0 dark:text-white"
-              >
-                Get In Touch
+                <b>GET IN TOUCH</b>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
