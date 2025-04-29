@@ -72,7 +72,11 @@ const navbar = () => {
             </li>
             <li>
               <a 
-                href="#" 
+                href="#getintouch-section" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('getintouch-section');
+                }}
                 className="block py-2 px-3 text-gray-900 relative group md:p-0 dark:text-white"
               >
                 <b>GET IN TOUCH</b>
