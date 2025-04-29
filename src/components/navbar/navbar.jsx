@@ -2,12 +2,12 @@ import React from 'react'
 
 const navbar = () => {
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about-section');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+    const scrollToSection = (sectionId) => {
+      const section  = document.getElementById(sectionId);
+      if (section ) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
 
   return (
     <>
@@ -33,7 +33,11 @@ const navbar = () => {
           <ul className="font-medium font-serif flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a 
-                href="#" 
+                href="#intro-section" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('intro-section');
+                }}
                 className="block py-2 px-3 text-white relative group md:p-0 dark:text-white"
               >
                 <b>HOME</b> 
@@ -45,7 +49,7 @@ const navbar = () => {
                 href="#about-section"
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToAbout();
+                  scrollToSection('about-section');
                 }}
                 className="block py-2 px-3 text-gray-900 relative group md:p-0 dark:text-white"
               >
@@ -55,19 +59,14 @@ const navbar = () => {
             </li>
             <li>
               <a 
-                href="#" 
+                href="#work-section" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('work-section');
+                }}
                 className="block py-2 px-3 text-gray-900 relative group md:p-0 dark:text-white"
               >
                 <b>WORKS</b>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#" 
-                className="block py-2 px-3 text-gray-900 relative group md:p-0 dark:text-white"
-              >
-                <b>PRICING</b>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>

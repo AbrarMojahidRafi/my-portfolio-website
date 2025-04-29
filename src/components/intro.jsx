@@ -4,7 +4,7 @@ import profileImage from '../assets/bracuSmile.jpg'; // Adjust path as needed
 const intro = () => {
   return (
     <>
-        <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-900 font-serif px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
+        <div id="intro-section" className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-900 font-serif px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40">
             {/* Image - First on mobile, Right on desktop */}
             <div className="md:w-1/2 flex justify-center order-first md:order-last mb-6 sm:mb-8 md:mb-0">
                 <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full border-4 border-yellow-200 overflow-hidden shadow-lg">
