@@ -4,6 +4,7 @@ import Intro from './components/intro';
 import About from './components/about';
 import Work from './components/work';
 import React from 'react';
+import GetInTouch from './components/getintouch';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
       <Intro/>
       <About/>
       <Work/>
-      <div>Rafi</div>
+      <GetInTouch/>
     </>
   )
 }
