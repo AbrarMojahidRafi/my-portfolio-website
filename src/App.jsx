@@ -5,6 +5,7 @@ import About from './components/about';
 import Work from './components/work';
 import React from 'react';
 import GetInTouch from './components/getintouch';
+import Footer from './components/footer';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <About/>
       <Work/>
       <GetInTouch/>
+      <Footer/>
     </>
   )
 }
