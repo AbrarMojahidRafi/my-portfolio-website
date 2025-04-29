@@ -56,14 +56,18 @@ const about = () => {
                         Competitive Programming
                     </h2>
                     <div className="space-y-4">
-                        <div className="bg-gray-100 border border-gray-200 rounded-lg p-6 hover:bg-gray-200 transition-colors">
-                            <h3 className="text-xl text-gray-800 font-semibold mb-2">LeetCode</h3>
-                            <p className="text-gray-600">7 Problems Solved</p>
-                        </div>
-                        <div className="bg-gray-100 border border-gray-200 rounded-lg p-6 hover:bg-gray-200 transition-colors">
-                            <h3 className="text-xl text-gray-800 font-semibold mb-2">CodeChef</h3>
-                            <p className="text-gray-600">400+ Problems Solved</p>
-                        </div>
+                        <a href="https://leetcode.com/u/abrar_mojahid_rafi/" target="_blank" rel="noopener noreferrer" className="block">
+                            <div className="bg-gray-100 border border-gray-200 rounded-lg p-6 hover:bg-gray-200 transition-colors">
+                                <h3 className="text-xl text-gray-800 font-semibold mb-2">LeetCode</h3>
+                                <p className="text-gray-600">7 Problems Solved</p>
+                            </div>
+                        </a>
+                        <a href="https://www.codechef.com/users/dot_com2" target="_blank" rel="noopener noreferrer" className="block">
+                            <div className="bg-gray-100 border border-gray-200 rounded-lg p-6 hover:bg-gray-200 transition-colors">
+                                <h3 className="text-xl text-gray-800 font-semibold mb-2">CodeChef</h3>
+                                <p className="text-gray-600">400+ Problems Solved</p>
+                            </div>
+                        </a>
                         <div className="bg-gray-100 border border-gray-200 rounded-lg p-6 hover:bg-gray-200 transition-colors">
                             <h3 className="text-xl text-gray-800 font-semibold mb-2">BeeCrowd</h3>
                             <p className="text-gray-600">98 Problems Solved</p>
